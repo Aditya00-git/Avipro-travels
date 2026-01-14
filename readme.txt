@@ -1,279 +1,231 @@
-===========================================
-README.txt – Avipro Travels (CMS Project)
-===========================================
+AVIPRO TRAVELS (CMS BASED TRAVEL WEBSITE)
+------------------------------------------------------------
 
-Project Title:
-Avipro Travels – CMS-Based Travel Package Booking Website
-
-Developed by:
-Aditya, Sumukh, Aryan, Heramb, Chaitanya
-
-Technologies Used:
-HTML, CSS, JavaScript, AJAX, PHP (8.x), MySQL (MariaDB)
-Server Required:
-XAMPP / WAMP / LAMP (Recommended: XAMPP 8+)
-
-Project Type:
-Dynamic CMS-based travel package website with admin control panel
+LIVE APPLICATION
+------------------------------------------------------------
+https://aviprotravels.kesug.com/
 
 
--------------------------------------------
-1. PROJECT OVERVIEW
--------------------------------------------
+PROJECT OVERVIEW
+------------------------------------------------------------
+Avipro Travels is a CMS-based travel package booking website developed using
+PHP, MySQL, HTML, CSS, JavaScript, and AJAX.
 
-Avipro Travels is a dynamic travel website that allows users to explore Indian 
-tourist destinations, view travel packages, submit enquiries, and browse a 
-masonry-style photo gallery. The website includes:
-
-- Home section with hero banner
-- Modern About Us section
-- Destinations
-- Packages (dynamic from database)
-- Gallery with auto-loading images
-- Contact Us
-- Booking/Enquiry system (AJAX)
-- Google Sign-In integration
-
-A full CMS-based Admin Panel allows site administrators to:
-
-- Add, edit, delete travel packages
-- Upload package images
-- Manage website content
-- View booking/enquiry submissions
-- Maintain data securely using sessions
+The project provides a complete travel management solution where users can
+browse destinations, explore tour packages, and submit booking enquiries.
+An admin panel allows administrators to manage packages, bookings, and site
+content dynamically.
 
 
--------------------------------------------
-2. FOLDER STRUCTURE
--------------------------------------------
+PROBLEM THIS PROJECT SOLVES
+------------------------------------------------------------
+Traditional travel websites often face these issues:
+- Static content that cannot be updated easily
+- No centralized admin control
+- Manual handling of booking enquiries
+- Poor user experience
+- Lack of automation
 
+Avipro Travels solves these problems by:
+- Providing a CMS-based system
+- Automating booking management
+- Centralizing package control
+- Offering a modern and responsive UI
+- Making the system scalable and easy to manage
+
+
+KEY FEATURES
+------------------------------------------------------------
+Frontend
+- Modern responsive UI
+- Hero section with custom branding
+- About Us section with enhanced layout
+- Popular Destinations display
+- Dynamic Tour Packages
+- Masonry-style Photo Gallery
+- Booking / Enquiry Form with validation
+- AJAX-based form submission
+- Contact Page
+- Sticky navigation bar
+
+Admin Panel (CMS)
+- Secure admin login system
+- Dashboard with statistics
+- Add / Edit / Delete travel packages
+- Upload and manage package images
+- View booking and enquiry requests
+- Manage site content
+- Session-based authentication system
+
+
+TECHNOLOGIES USED
+------------------------------------------------------------
+Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+Backend
+- PHP 8.x
+
+Database
+- MySQL / MariaDB
+
+AJAX
+- Used for booking form submission
+
+Deployment
+- InfinityFree (PHP hosting)
+
+Version Control
+- Git & GitHub
+
+
+PROJECT STRUCTURE
+------------------------------------------------------------
 avipro-travels/
-│
-├── admin/
-│   ├── login.php
-│   ├── logout.php
-│   ├── dashboard.php
-│   ├── packages.php / manage_packages.php
-│   ├── add_package.php
-│   ├── edit_package.php
-│   ├── delete_package.php
-│   ├── bookings.php / view_bookings.php
-│   ├── site-content.php (if added)
-│
-├── assets/
-│   ├── css/style.css
-│   ├── js/main.js
-│   ├── js/script.js
-│   ├── js/header.js
-│   ├── images/* (frontend images)
-│
-├── uploads/
-│   ├── packages/ 
-│   ├── gallery/  
-│
-├── config.php
-├── index.php
-├── packages.php
-├── package-details.php
-├── contact.php
-├── booking_submit.php
-├── google-login.php
-├── google-logout.php
-└── README.txt
-├── avipro report.pdf
-├── website images/
+|
+|-- admin/
+|   |-- login.php
+|   |-- dashboard.php
+|   |-- packages.php
+|   |-- bookings.php
+|
+|-- assets/
+|   |-- css/
+|   |-- js/
+|   |-- images/
+|
+|-- uploads/
+|   |-- packages/
+|   |-- gallery/
+|
+|-- config.php
+|-- index.php
+|-- packages.php
+|-- contact.php
+|-- booking_submit.php
+|-- google-login.php
+|-- google-logout.php
+|-- README.md
 
 
+HOW THE SYSTEM WORKS
+------------------------------------------------------------
+1. User opens the website.
+2. Frontend loads dynamic content from the database.
+3. User explores destinations and packages.
+4. User submits enquiry through booking form.
+5. AJAX sends data to the backend.
+6. PHP stores enquiry in MySQL database.
+7. Admin logs in to the CMS panel.
+8. Admin views bookings and manages packages.
+9. Changes are reflected instantly on the website.
 
--------------------------------------------
-3. INSTALLATION INSTRUCTIONS
--------------------------------------------
 
-1. Extract the ZIP file.
+INSTALLATION (LOCAL SETUP)
+------------------------------------------------------------
+1. Install XAMPP.
+2. Move project folder to:
 
-2. Move the folder:
-   avipro-travels → C:/xampp/htdocs/
+   C:/xampp/htdocs/avipro-travels
 
-3. Start XAMPP:
-   - Apache (ON)
-   - MySQL (ON)
+3. Start Apache and MySQL.
+4. Open phpMyAdmin:
 
-4. Import the database:
-   - Open http://localhost/phpmyadmin
-   - Create a database named: avipro_travels
-   - Click IMPORT
-   - Select file: avipro_travels.sql
-   - Click GO
+   http://localhost/phpmyadmin
 
-5. Open the website in browser:
+5. Create database:
+
+   avipro_travels
+
+6. Import database file:
+
+   avipro_travels.sql
+
+7. Open website:
+
    http://localhost/avipro-travels/
 
-6. Open Admin Panel:
-   http://localhost/avipro-travels/admin/login.php
+
+DEPLOYMENT
+------------------------------------------------------------
+This project is deployed using InfinityFree.
+
+Live Website:
+https://aviprotravels.kesug.com/
+
+The hosting supports PHP and MySQL, making it suitable for CMS-based
+applications with database integration.
 
 
--------------------------------------------
-4. ADMIN LOGIN CREDENTIALS
--------------------------------------------
+ADMIN PANEL ACCESS
+------------------------------------------------------------
+Admin Login URL:
+https://aviprotravels.kesug.com/admin/login.php
 
+Admin Credentials:
 Username: admin
 Password: admin123
 
-These credentials are stored inside the 'admins' table.
+
+DATABASE STRUCTURE
+------------------------------------------------------------
+Tables used in the system:
+
+- admins
+  -> Stores admin login credentials
+
+- packages
+  -> Stores travel package information
+
+- bookings
+  -> Stores user booking enquiries
+
+- users
+  -> Stores Google sign-in users 
 
 
--------------------------------------------
-5. FRONTEND FEATURES
--------------------------------------------
 
-- Clean and modern hero section
-- Dark blue header with search and sign-in options
-- Sticky navigation bar
-- Enhanced About Us section with modern design
-- Popular destinations displayed dynamically
-- Dynamic Packages system (CRUD from admin panel)
-- Masonry-style auto-loading gallery
-- Contact page with email & phone display
-- Modern Booking/Enquiry form with:
-  - Client-side validation
-  - AJAX submission
-  - Database storage
-- Fully responsive layout across devices
-- Smooth scroll navigation
-- Footer with structured layout
+FUTURE IMPROVEMENTS
+------------------------------------------------------------
+- User dashboard for booking history
+- Payment gateway integration
+- Advanced search and filters
+- Review and rating system
+- Email notification system
+- Multi-language support
+- Mobile app version
 
 
--------------------------------------------
-6. ADMIN PANEL FEATURES
--------------------------------------------
-
-- Session-based secure login system
-- Dashboard showing package & booking counts
-- Add new travel packages
-- Edit existing packages
-- Delete packages
-- Upload and update package images
-- View all booking enquiries submitted by users
-- Organized Bootstrap-based UI for ease of use
-- Logout system with session destroy
-
-
--------------------------------------------
-7. DATABASE TABLES
--------------------------------------------
-
-1. admins
-   Columns: id, username, password
-
-2. packages
-   Columns: id, title, slug, destination, duration, price, 
-            short_description, full_description, image
-
-3. bookings
-   Columns: id, name, email, phone, destination, travel_date,
-            persons, message, created_at
-
-
--------------------------------------------
-8. HOW TO USE THE PROJECT
--------------------------------------------
-
-Frontend user:
-- Browse packages and destinations
-- Open package details
-- Submit enquiries using AJAX-based form
-- View gallery images auto-loaded from uploads/gallery
-- Contact via contact form
-- Optional: Sign in using Google OAuth
-
-Admin user:
-- Log in using admin credentials
-- Manage packages (add / edit / delete)
-- View booking requests
-- Update website content
-- Upload images for packages and gallery
-
-
--------------------------------------------
-9. IMPORTANT NOTES
--------------------------------------------
-
-- Ensure "uploads/" folder has write permissions:
-  Windows: No issue
-  Linux/Mac: chmod 755 or 777 if required
-
-- booking_submit.php must NOT be renamed (AJAX depends on it)
-
-- Google Sign-In:
-  Works only on developer's system unless the professor
-  updates the Google Client ID and Redirect URI.
-  This is NORMAL and does NOT affect evaluation.
-
-- If packages do not show images:
-  Ensure images exist inside uploads/packages/
-
-- If gallery is empty:
-  Add images inside uploads/gallery/
-
-
--------------------------------------------
-10. WHAT THE PROFESSOR MUST DO TO RUN THE PROJECT
--------------------------------------------
-
-1. Install and open XAMPP  
-2. Move the avipro-travels folder into htdocs  
-3. Import the avipro_travels.sql file  
-4. Open:
-   http://localhost/avipro-travels/
-
-Admin Panel:
-   http://localhost/avipro-travels/admin/login.php
-
-5. Use credentials:
-   Username: admin
-   Password: admin123
-
-6. Test:
-   - Add packages
-   - Delete packages
-   - Submit a sample enquiry
-   - Check if booking appears in admin panel
-
-
--------------------------------------------
-11. WHAT TO SUBMIT (PROJECT REQUIREMENTS)
--------------------------------------------
-
-1. ZIP file of the complete project  
-2. Database file (.sql)  
-3. Admin login credentials  
-4. Screenshots of:
-   - Homepage
-   - About Us
-   - Destinations
-   - Packages
-   - Gallery
-   - Contact Us
-   - Booking Form
-   - Admin Login
-   - Admin Dashboard
-   - Manage Packages
-   - View Bookings
-
-
--------------------------------------------
-12. PROJECT STATUS
--------------------------------------------
-
+PROJECT STATUS
+------------------------------------------------------------
 - Fully functional
-- Database integrated
-- Admin CMS working
-- Booking system complete
-- Responsive UI implemented
-- Google OAuth integrated (optional)
-- Ready for submission
+- CMS implemented
+- Database connected
+- Live deployed
+- Admin panel working
+- Booking system working
+- Ready for academic submission
 
 
--------------------------------------------
-END OF README
--------------------------------------------
+TEAM MEMBERS
+------------------------------------------------------------
+Aditya  
+Sumukh  
+Aryan  
+Heramb  
+Chaitanya  
+
+
+CONCLUSION
+------------------------------------------------------------
+Avipro Travels is a complete CMS-based travel website that demonstrates
+full-stack web development skills using PHP and MySQL. The project focuses on
+real-world usability, admin control, automation, and modern user interface
+design, making it suitable for academic evaluation and portfolio showcase.
+
+
+AUTHOR
+------------------------------------------------------------
+Aditya Seswani
