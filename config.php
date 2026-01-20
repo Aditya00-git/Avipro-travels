@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-$host = "localhost";
-$user = "root";
-$pass = ""; // default empty in XAMPP
-$dbname = "avipro_travels";
+$host = "sql210.infinityfree.com";
+$dbname = "if0_40906197_avipro_travels";
+$user = "if0_40906197";
+$pass = "Aditya14321";
+
 // Google OAuth client id (create this in Google Cloud Console and paste value here)
 $google_client_id = "110035814796-kau5u0mjf8a4ef7g4nj38dg19hrl8v4f.apps.googleusercontent.com";
 

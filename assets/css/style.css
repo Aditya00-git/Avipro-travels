@@ -191,7 +191,7 @@ body { background: var(--white); }
 .section-title { margin-bottom: 15px; }
 
 .section-text {
-  color: var(--black-coral);
+  color: var(w);
   margin-bottom: 30px;
 }
 
@@ -1460,9 +1460,9 @@ figure.card-banner {
 }
 
 /* Default decorative image - use this until you place your own uploads,
-   you can change URL to /avipro-travels/uploads/your-image.jpg once ready */
+   you can change URL to /uploads/your-image.jpg once ready */
 .hero-photo {
-  background-image: url('/avipro-travels/assets/images/hero-deco.jpg');
+  background-image: url('/assets/images/hero-deco.jpg');
 }
 
 /* animation: subtle float */
@@ -1730,7 +1730,7 @@ body {
 
 /* visual / decorative area */
 .cta-visual { width: 380px; flex: 0 0 380px; display:flex; align-items:center; justify-content:center; }
-.hero-visual { width: 340px; height: 220px; border-radius:14px; background-image: url('/avipro-travels/assets/images/hero-deco.jpg'); background-size:cover; background-position:center; box-shadow: 0 18px 40px rgba(3,12,22,0.35); border: 1px solid rgba(255,255,255,0.06); transform: translateY(0); transition: transform .6s cubic-bezier(.2,.9,.2,1), box-shadow .3s ease; }
+.hero-visual { width: 340px; height: 220px; border-radius:14px; background-image: url('/assets/images/hero-deco.jpg'); background-size:cover; background-position:center; box-shadow: 0 18px 40px rgba(3,12,22,0.35); border: 1px solid rgba(255,255,255,0.06); transform: translateY(0); transition: transform .6s cubic-bezier(.2,.9,.2,1), box-shadow .3s ease; }
 .hero-visual:hover { transform: translateY(-6px) rotate(-0.6deg); box-shadow: 0 28px 60px rgba(3,12,22,0.45); }
 
 /* small screens */

@@ -106,10 +106,10 @@
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <!-- Your booking AJAX/validation JS -->
-<script src="/avipro-travels/assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 
 <!-- Tourly theme JS -->
-<script src="/avipro-travels/assets/js/script.js"></script>
+<script src="/assets/js/script.js"></script>
 <!-- Google Identity Services -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 
@@ -117,7 +117,7 @@
   // expose client id to header.js
   window.__AVIPRO_GOOGLE_CLIENT_ID = "<?php echo htmlspecialchars($google_client_id ?? ''); ?>";
 </script>
-<script src="/avipro-travels/assets/js/gallery.js" defer></script>
+<script src="/assets/js/gallery.js" defer></script>
 
 </body>
 </html>

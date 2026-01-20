@@ -422,7 +422,7 @@ $destinations = $destStmt->fetchAll(PDO::FETCH_ASSOC);
     <?php
     // server folder and web url
     $galleryDir = __DIR__ . '/uploads/gallery';
-    $galleryUrl = '/avipro-travels/uploads/gallery';
+    $galleryUrl = '/uploads/gallery';
 
     $images = [];
     if (is_dir($galleryDir)) {
@@ -482,14 +482,14 @@ $destinations = $destStmt->fetchAll(PDO::FETCH_ASSOC);
       </p>
 
       <div class="cta-actions">
-        <a class="btn btn-primary btn-cta" href="/avipro-travels/contact.php" role="button" id="primaryCta">
+        <a class="btn btn-primary btn-cta" href="/contact.php" role="button" id="primaryCta">
           <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" style="margin-right:10px;">
             <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
           </svg>
           Get a Free Quote
         </a>
 
-        <a class="btn btn-outline" href="/avipro-travels/packages.php" id="secondaryCta">Explore Packages</a>
+        <a class="btn btn-outline" href="/packages.php" id="secondaryCta">Explore Packages</a>
       </div>
     </div>
 

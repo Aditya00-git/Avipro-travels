@@ -8,7 +8,7 @@ require_once __DIR__ . '/config.php';
   <title>Avipro Travels</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" href="/avipro-travels/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- small header-specific styles (optional; can move to style.css) -->
   <style>
@@ -55,7 +55,7 @@ require_once __DIR__ . '/config.php';
   <div class="container" style="max-width:1180px;margin:0 auto;">
     <div style="display:flex;align-items:center;gap:8px;">
       <div style="display:flex; align-items:center; gap:10px;">
-  <img src="/avipro-travels/assets/images/logo.png" alt="Avipro Logo" class="avipro-logo">
+  <img src="/assets/images/logo.png" alt="Avipro Logo" class="avipro-logo">
   <span class="site-logo">Avipro Travels</span>
 </div>
 
@@ -69,7 +69,7 @@ require_once __DIR__ . '/config.php';
       <?php if (!empty($_SESSION['user_email'])): ?>
         <div style="color:#fff;font-weight:600;padding:6px 10px;border-radius:6px;background:rgba(255,255,255,0.06);">
           <?php echo htmlspecialchars($_SESSION['user_name'] ?? $_SESSION['user_email']); ?>
-          <a href="/avipro-travels/google-logout.php" style="color:#fff;margin-left:10px;text-decoration:underline;">Sign out</a>
+          <a href="/google-logout.php" style="color:#fff;margin-left:10px;text-decoration:underline;">Sign out</a>
         </div>
       <?php else: ?>
         <button id="googleSignInBtn" class="header-signin-btn">Sign in</button>
@@ -86,12 +86,12 @@ require_once __DIR__ . '/config.php';
 
     <nav aria-label="Main nav">
       <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;">
-        <li><a href="/avipro-travels/#home">Home</a></li>
-        <li><a href="/avipro-travels/#about">About Us</a></li>
-        <li><a href="/avipro-travels/#destination">Destination</a></li>
-        <li><a href="/avipro-travels/packages.php">Packages</a></li>
-        <li><a href="/avipro-travels/#gallery">Gallery</a></li>
-        <li><a href="/avipro-travels/contact.php">Contact Us</a></li>
+        <li><a href="/#home">Home</a></li>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#destination">Destination</a></li>
+        <li><a href="/packages.php">Packages</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/contact.php">Contact Us</a></li>
       </ul>
     </nav>
   </div>
@@ -107,4 +107,4 @@ require_once __DIR__ . '/config.php';
 
 
 <!-- load header js -->
-<script src="/avipro-travels/assets/js/header.js" defer></script>
+<script src="/assets/js/header.js" defer></script>

@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submitBtn.textContent = 'Sending...';
 
     // send to server - absolute path
-    fetch('/avipro-travels/booking_submit.php', {
+    fetch('/booking_submit.php', {
       method: 'POST',
       body: fd
     }).then(r => r.json())

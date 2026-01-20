@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const q = this.value.trim();
     if (!q) { searchResults.style.display = 'none'; return; }
     timer = setTimeout(() => {
-      fetch('/avipro-travels/search.php?q=' + encodeURIComponent(q))
+      fetch('/search.php?q=' + encodeURIComponent(q))
         .then(r => r.json())
         .then(data => {
           if (!data || !data.length) {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           searchResults.innerHTML = data.map(item => {
             return `<div class="search-row">
-                <a href="/avipro-travels/package-details.php?id=${item.id}">${escapeHtml(item.title)}</a>
+                <a href="/package-details.php?id=${item.id}">${escapeHtml(item.title)}</a>
                 <div class="muted">${escapeHtml(item.destination)} — ₹${Number(item.price).toLocaleString()}</div>
               </div>`;
           }).join('');
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
               // For a quick implementation, we'll use the "google.accounts.id" credential flow if available below.
               console.log('access_token acquired (not id_token). Using backend with access token.');
               // send access_token to backend to exchange for user info
-              fetch('/avipro-travels/google-login.php', {
+              fetch('/google-login.php', {
                 method:'POST',
                 headers:{'Content-Type':'application/json'},
                 body: JSON.stringify({ access_token: resp.access_token })
